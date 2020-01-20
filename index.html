@@ -12,6 +12,8 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="https://kit.fontawesome.com/39f437f428.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -44,7 +46,8 @@
 			<a href="/login">Sign In / Sign Up</a>
 		</div>
 	</nav>
-	<article class="container mt-3">
+
+	<!--	<div class="container alert-container">
 		<div class="row d-none d-sm-block">
 			<div class="col-12">
 				<div class="alert alert-warning">
@@ -53,22 +56,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12">
-				<section class="callout jumbotron text-center">
-					<h1>The finest whiskeys delivered to your doorstep</h1>
-					<p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-						<s class="d-none d-sm-inline">£19.99</s>
-						<span class="d-inline d-sm-none"><br></span>
-						<strong><mark>The first one is free!</mark></strong></p>
-					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
-					<p class="text-muted">
-						<small>You  must be over 18 to sign up to our service. Please, drink responsibly</small></p>
-				</section>
+	</div> -->
+	<div class="container-fluid callout-container">
+		<div class="opaque-overlay">&nbsp</div>
+			<div class="row">
+				<div class="col-12">
+					<section class="callout jumbotron text-center">
+						<h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep</h1>
+						<hr class="block-divider block-divider--orange">
+						<p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+							<s class="d-none d-sm-inline">£19.99</s>
+							<span class="d-inline d-sm-none"><br></span>
+							<strong><mark>The first one is free!</mark></strong></p>
+						<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+						<p class="text-muted">
+							<small>You  must be over 18 to sign up to our service. Please, drink responsibly</small></p>
+					</section>
+				</div>
 			</div>
-		</div>
-		<hr>
+		
+	</div>
 
+
+	<div class="container quotes-container">
 		<section class="quotes">
 			<div class="row">
 				<div class="col-12 my-5">
@@ -106,8 +116,9 @@
 						</div>
 					</div>
 		</section>
-		<hr>
+	</div>
 
+	<div class="container features-container">
 		<section class="features">
 			<div class="row">
 				<div class="col-12 my-5">
@@ -154,46 +165,48 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="row">
-				<div class="col-12 my-5">
-					<h2 class="text-uppercase">Monthly Favorites:</h2>
-				</div>
-				<div class="col-12 col-md-6">
-					<table class="table table-bordered table-sm">
-						<thead>
-							<tr>
-								<th scope="col">Name</th>
-								<th scope="col">Origin</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Ichiro's Malt & Grain</td>
-								<td>Japan</td>
-							</tr>
-							<tr>
-								<td>Maker's Mark</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td>Monkey Shoulder</td>
-								<td>Scotland</td>
-							</tr>
-							<tr>
-								<td>Tullamore D.E.W.</td>
-								<td>Ireland</td>
-							</tr>
-							<tr>
-								<td>Bushmills Black Bush</td>
-								<td>USA</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+	</div>
+
+	<section>
+		<div class="row">
+			<div class="col-12 my-5">
+				<h2 class="text-uppercase">Monthly Favorites:</h2>
 			</div>
-		</section>
-	</article>
+			<div class="col-12 col-md-6">
+				<table class="table table-bordered table-sm">
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Origin</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Ichiro's Malt & Grain</td>
+							<td>Japan</td>
+						</tr>
+						<tr>
+							<td>Maker's Mark</td>
+							<td>USA</td>
+						</tr>
+						<tr>
+							<td>Monkey Shoulder</td>
+							<td>Scotland</td>
+						</tr>
+						<tr>
+							<td>Tullamore D.E.W.</td>
+							<td>Ireland</td>
+						</tr>
+						<tr>
+							<td>Bushmills Black Bush</td>
+							<td>USA</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
 
 	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
 		<div class="modal-dialog" role="document">
@@ -215,11 +228,11 @@
 							<label for="password">Password</label>
 							<input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
-                        <div class="form-group">
-							<label for="repeatPassword">Repeat Password</label>
-							<input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+							<div class="form-group">
+								<label for="repeatPassword">Repeat Password</label>
+								<input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
                         </div>
-						<button type="submit" class="btn btn-success">Submit</button>
+								<button type="submit" class="btn btn-success">Submit</button>
 					</form>
 				</div>
 			</div>
